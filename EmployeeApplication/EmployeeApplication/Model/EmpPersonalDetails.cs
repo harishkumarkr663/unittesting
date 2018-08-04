@@ -42,12 +42,9 @@ namespace EmployeeApplication.Model
             }
         }
 
-        public Employee GetEmployeeDetails(int empId)
-        {
-            return (from e in _employeeEntity.EmployeesCollection
-                    where e.EmpId == empId
-                    select e).FirstOrDefault();
-        }
+        public IEmployee GetEmployeeDetails(int empId) => (from e in _employeeEntity.EmployeesCollection
+                                                           where e.EmpId == empId
+                                                           select e).FirstOrDefault();
 
         public int GetDurationWorked(int empId)
         {

@@ -4,7 +4,7 @@ namespace EmployeeApplication.Entitiy
 {
     public class EmployeeEntity
     {
-        public List<Employee> EmployeesCollection = new List<Employee>()
+        public List<IEmployee> EmployeesCollection = new List<IEmployee>()
         {
             new Employee()
             {

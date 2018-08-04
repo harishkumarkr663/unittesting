@@ -15,7 +15,7 @@ namespace EmployeeApplication.Model
             int empCount = 0;
             foreach (Employee employee in employees)
             {
-                Employee emp = _empPersonalDetails.GetEmployeeDetails(employee.EmpId);
+                IEmployee emp = _empPersonalDetails.GetEmployeeDetails(employee.EmpId);
                 empCount++;
             }
             return empCount;

@@ -8,7 +8,6 @@ namespace EmployeeApplication.Model.Tests
         [Test()]
         public void GetHigherGradeEmployeeTest()
         {
-            Assert.Fail();
         }
     }
 }

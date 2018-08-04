@@ -13,7 +13,7 @@ namespace EmployeeApplication.Model
 
         void AddEmployeeDetails(List<Employee> employees);
 
-        Employee GetEmployeeDetails(int empId);
+        IEmployee GetEmployeeDetails(int empId);
 
         int GetEmployeeGrade(int empId);
 
