@@ -1,9 +1,6 @@
-﻿using System;
+﻿using EmployeeApplication.Entitiy;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeApplication.Entitiy;
 
 namespace EmployeeApplication.Model
 {
@@ -13,13 +10,11 @@ namespace EmployeeApplication.Model
 
         private readonly BenefitEntity _benefitEntity;
 
-
         public EmpBenefits(IEmpPersonalDetails empPersonalDetails)
         {
             _empPersonalDetails = empPersonalDetails;
             _benefitEntity = new BenefitEntity();
         }
-
 
         public List<string> GetBasicBenefits(int empId)
         {

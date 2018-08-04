@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace EmployeeApplication.Entitiy
 {
     public class EmployeeEntity
     {
-
         public List<Employee> EmployeesCollection = new List<Employee>()
         {
             new Employee()
@@ -29,7 +24,6 @@ namespace EmployeeApplication.Entitiy
                 DurationWorked = 30,
                 Grade = 2,
                 Email = "prashanth@executeautomation.com"
-
             },
 
             new Employee()
@@ -40,7 +34,6 @@ namespace EmployeeApplication.Entitiy
                 DurationWorked = 13,
                 Grade = 2,
                 Email = "ramesh@executeautomation.com"
-
             },
 
             new Employee()

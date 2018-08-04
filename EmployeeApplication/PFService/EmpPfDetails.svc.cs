@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
+﻿using System.Linq;
 
 namespace PFService
 {
-     public class EmpPfDetails : IEmpPfDetails
+    public class EmpPfDetails : IEmpPfDetails
     {
         public double? GetPfEmployeeControlSofar(int empId)
         {
@@ -30,8 +24,6 @@ namespace PFService
             var contribution = (basic * 18) / 100;
 
             return (contribution * totalDuration);
-
-
         }
 
         public double? GetPfEmployerControlSofar(int empId)

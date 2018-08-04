@@ -1,15 +1,10 @@
-﻿using System;
+﻿using EmployeeApplication.Entitiy;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeApplication.Entitiy;
 
 namespace EmployeeApplication.Model
 {
     public interface IEmpPersonalDetails
     {
-
         int GraduityEligibleCount { get; set; }
 
         bool IsValidEmail(string email);
@@ -29,8 +24,5 @@ namespace EmployeeApplication.Model
         bool CalculatePfEligibility(IEmpPfDetails pfDetails, int empId);
 
         int GetDurationWorked(int empId);
-
-
     }
-
 }

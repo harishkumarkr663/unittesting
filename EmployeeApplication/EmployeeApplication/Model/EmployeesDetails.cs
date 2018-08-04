@@ -1,9 +1,6 @@
-﻿using System;
+﻿using EmployeeApplication.Entitiy;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeApplication.Entitiy;
 
 namespace EmployeeApplication.Model
 {
@@ -11,23 +8,18 @@ namespace EmployeeApplication.Model
     {
         private IEmpPersonalDetails _empPersonalDetails;
 
-
-        public EmployeesDetails(IEmpPersonalDetails empPersonalDetails)
-        {
-            _empPersonalDetails = empPersonalDetails;
-        }
+        public EmployeesDetails(IEmpPersonalDetails empPersonalDetails) => _empPersonalDetails = empPersonalDetails ?? throw new ArgumentNullException(nameof(empPersonalDetails));
 
         public int GetHigherGradeEmployee(List<Employee> employees)
         {
             int empCount = 0;
-            foreach (var employee in employees)
+            foreach (Employee employee in employees)
             {
-                var emp = _empPersonalDetails.GetEmployeeDetails(employee.EmpId);
+                Employee emp = _empPersonalDetails.GetEmployeeDetails(employee.EmpId);
                 empCount++;
             }
             return empCount;
         }
-
 
         public int GetGratuityEligibleCount(List<Employee> employees)
         {
@@ -42,7 +34,6 @@ namespace EmployeeApplication.Model
 
             return _empPersonalDetails.GraduityEligibleCount;
         }
-
 
         public int GetPfEligibleCandidatesCount(List<Employee> employees)
         {

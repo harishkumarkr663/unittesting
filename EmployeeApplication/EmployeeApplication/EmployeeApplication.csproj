@@ -65,6 +65,7 @@
     <Compile Include="Entitiy\Employee.cs" />
     <Compile Include="Entitiy\EmployeeEntity.cs" />
     <Compile Include="Entitiy\BenefitEntity.cs" />
+    <Compile Include="Entitiy\IEmployee.cs" />
     <Compile Include="Model\EmpBenefits.cs" />
     <Compile Include="Model\EmpFinanceDetails.cs" />
     <Compile Include="Model\EmployeesDetails.cs" />

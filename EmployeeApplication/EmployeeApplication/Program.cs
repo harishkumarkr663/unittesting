@@ -1,17 +1,15 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using EmployeeApplication.Entitiy;
-using EmployeeApplication.Model;
+﻿using EmployeeApplication.Model;
+using System;
 
 namespace EmployeeApplication
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int empId = 4;
 
-            //Employee Personal Details 
+            //Employee Personal Details
             EmpPersonalDetails personalDetails = new EmpPersonalDetails();
 
             Console.WriteLine("Year End bonus for Employee {0} is {1}",
@@ -26,7 +24,6 @@ namespace EmployeeApplication
             Console.WriteLine("Employer Contribution for Employee {0} is {1}",
                 personalDetails.GetEmployeeDetails(empId).Name, pfDetails.GetPfEmployerControlSofar(empId));
 
-
             //Employee Benefits
             EmpBenefits empBenefits = new EmpBenefits(new EmpPersonalDetails());
             Console.WriteLine("Benefits of Employee with grade {0} are:",
@@ -37,11 +34,7 @@ namespace EmployeeApplication
                 Console.Write(benefit + "  ");
             }
 
-
-
             Console.Read();
-
-
         }
     }
 }

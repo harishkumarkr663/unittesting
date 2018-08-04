@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmployeeApplication.Entitiy
+﻿namespace EmployeeApplication.Entitiy
 {
-    public class Employee
+    public class Employee : IEmployee
     {
         public string Name { get; set; }
 
@@ -19,8 +13,5 @@ namespace EmployeeApplication.Entitiy
         public int Grade { get; set; }
 
         public string Email { get; set; }
-
-
-
     }
 }

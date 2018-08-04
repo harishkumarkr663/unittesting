@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeApplication.Entitiy;
-
-namespace EmployeeApplication.Model
+﻿namespace EmployeeApplication.Model
 {
     public interface IEmpFinanceDetails
     {
-
     }
 }

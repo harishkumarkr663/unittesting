@@ -1,0 +1,10 @@
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\bin\PFService.dll.config
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\bin\PFService.dll
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\bin\PFService.pdb
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\bin\EntityFramework.dll
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\bin\EntityFramework.xml
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\obj\Debug\PFService.csprojAssemblyReference.cache
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\obj\Debug\PFService.csproj.CoreCompileInputs.cache
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\obj\Debug\PFService.csproj.CopyComplete
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\obj\Debug\PFService.dll
+C:\Users\sai\Source\Repos\EmployeeAppForMoqTest\EmployeeApplication\PFService\obj\Debug\PFService.pdb

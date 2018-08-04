@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using EmployeeApplication.Entitiy;
+﻿using EmployeeApplication.Entitiy;
 using EmployeeApplication.Model;
 using Moq;
 using NUnit.Framework;
-
+using System.Collections.Generic;
 
 namespace Testing
 {
@@ -14,7 +12,6 @@ namespace Testing
         [Test]
         public void Video1()
         {
-
             //Video 1
             //Simple Moq
             //Arrange
@@ -26,7 +23,6 @@ namespace Testing
             ////Assert
             //Assert.That(contrib, Is.EqualTo(3455), "Its not expected");
 
-
             //Arrange
             var moqpfDetail = new Mock<IEmpPersonalDetails>();
 
@@ -37,10 +33,6 @@ namespace Testing
 
             //Assert
             moqpfDetail.Verify();
-
-
-
-
         }
 
         [Test]
@@ -54,8 +46,8 @@ namespace Testing
             int duration = moqPersonalDetail.Object.GetDurationWorked(1);
 
             Assert.That(duration, Is.EqualTo(20));
+            Assert.That(duration, Is.EqualTo(20));
         }
-
 
         [Test]
         public void Video3()
@@ -70,11 +62,9 @@ namespace Testing
             ////Act
             //pfDetails.GetPfEmployerControlSofar(1);
 
-
             ////Assert
             //moqpfDetail.Verify(x => x.GetDurationWorked(It.IsAny<int>()),
             //    Times.Exactly(1));
-
 
             //Number of times being called
             List<Employee> employees = new List<Employee>
@@ -95,21 +85,16 @@ namespace Testing
                     Name = "Johnson",
                     Salary = 8000
                 }
-
             };
-
 
             //Arrange
             var empPersonalDetail = new Mock<IEmpPersonalDetails>();
 
             var empDetails = new EmployeesDetails(empPersonalDetail.Object);
 
-
             empDetails.GetHigherGradeEmployee(employees);
 
             empPersonalDetail.Verify(x => x.GetEmployeeDetails(It.IsAny<int>()), Times.Exactly(2));
-
-
         }
     }
 }

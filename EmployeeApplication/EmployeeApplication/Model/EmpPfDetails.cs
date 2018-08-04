@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmployeeApplication.Model
+﻿namespace EmployeeApplication.Model
 {
     public class EmpPfDetails : IEmpPfDetails
     {
-
         private IEmpPersonalDetails _empPersonalDetails;
 
         public EmpPfDetails(IEmpPersonalDetails empPersonalDetails)
@@ -25,8 +18,6 @@ namespace EmployeeApplication.Model
                 return false;
         }
 
-      
-
         public float GetPfEmployerControlSofar(int empId)
         {
             //Duration Worked
@@ -38,10 +29,10 @@ namespace EmployeeApplication.Model
             //Salary * 12% of basic (considering basic as 30% of salary)
 
             //Basic salary
-            var basic = (salary*30)/100;
+            var basic = (salary * 30) / 100;
 
             //12% of basic
-            var contribution = (basic*12)/100;
+            var contribution = (basic * 12) / 100;
 
             return (contribution * totalDuration);
         }

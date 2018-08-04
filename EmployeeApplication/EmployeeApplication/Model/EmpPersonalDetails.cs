@@ -1,15 +1,11 @@
-﻿using System;
+﻿using EmployeeApplication.Entitiy;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmployeeApplication.Entitiy;
 
 namespace EmployeeApplication.Model
 {
     public class EmpPersonalDetails : IEmpPersonalDetails
     {
-
         public int GraduityEligibleCount { get; set; }
 
         private readonly EmployeeEntity _employeeEntity;
@@ -18,7 +14,6 @@ namespace EmployeeApplication.Model
         {
             _employeeEntity = new EmployeeEntity();
         }
-
 
         public float GetEmployeeSalary(int empId)
         {
@@ -31,17 +26,15 @@ namespace EmployeeApplication.Model
             return salary;
         }
 
-
         public void SaveEmployee(Employee employee)
         {
             //Save an Employee into the inmemory collection of List
             _employeeEntity.EmployeesCollection.Add(employee);
         }
 
-
         public void AddEmployeeDetails(List<Employee> employees)
         {
-            //Saves all the employee into the collection, but will be destroyed 
+            //Saves all the employee into the collection, but will be destroyed
             //once the execution is closed
             foreach (var employee in employees)
             {
@@ -49,16 +42,12 @@ namespace EmployeeApplication.Model
             }
         }
 
-        
-
-
         public Employee GetEmployeeDetails(int empId)
         {
             return (from e in _employeeEntity.EmployeesCollection
                     where e.EmpId == empId
                     select e).FirstOrDefault();
         }
-
 
         public int GetDurationWorked(int empId)
         {

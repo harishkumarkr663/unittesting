@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
-using EmployeeApplication.Entitiy;
-using EmployeeApplication.Model;
+﻿using EmployeeApplication.Model;
 using Moq;
 using NUnit.Framework;
-
 
 namespace EmployeeTest
 {
@@ -30,8 +23,11 @@ namespace EmployeeTest
 
             //Assert
             moqEmpPerDetail.Verify(x => x.GetDurationWorked(It.IsAny<int>()));
-
         }
 
+        [Test]
+        public void TestMethod2()
+        {
+        }
     }
 }
