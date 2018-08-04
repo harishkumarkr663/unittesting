@@ -4,18 +4,12 @@
     {
         private IEmpPersonalDetails _empPersonalDetails;
 
-        public EmpPfDetails(IEmpPersonalDetails empPersonalDetails)
-        {
-            _empPersonalDetails = empPersonalDetails;
-        }
+        public EmpPfDetails(IEmpPersonalDetails empPersonalDetails) => _empPersonalDetails = empPersonalDetails;
 
         public bool IsPfEligible(int empId)
         {
             // If salary is greater than 4000 only then employee is eligible
-            if (_empPersonalDetails.GetEmployeeSalary(empId) >= 4000)
-                return true;
-            else
-                return false;
+            return _empPersonalDetails.GetEmployeeSalary(empId) >= 4000;
         }
 
         public float GetPfEmployerControlSofar(int empId)
