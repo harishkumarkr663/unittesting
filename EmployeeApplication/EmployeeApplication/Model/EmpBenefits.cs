@@ -16,39 +16,19 @@ namespace EmployeeApplication.Model
             _benefitEntity = new BenefitEntity();
         }
 
-        public List<string> GetBasicBenefits(int empId)
-        {
-            //Get the grade of employee
-            var grade = _empPersonalDetails.GetEmployeeGrade(empId);
-
+        public List<string> GetBasicBenefits(int empId) =>
             //Get the basic benefits from the collection
-            return _benefitEntity.BenefitCollection.Where(x => x.BenefitGrade == grade)
+            _benefitEntity.BenefitCollection.Where(x => x.BenefitGrade == _empPersonalDetails.GetEmployeeGrade(empId))
                     .Select(x => x.BasicBenefits).FirstOrDefault().ToList();
-        }
 
         public List<string> GetAdditionalBenefits(int empId)
         {
-            //Get the grade of employee
-            var grade = _empPersonalDetails.GetEmployeeGrade(empId);
-
             //Get the additional benefits from the collection
-            return _benefitEntity.BenefitCollection.Where(x => x.BenefitGrade == grade)
+            return _benefitEntity.BenefitCollection.Where(x => x.BenefitGrade == _empPersonalDetails.GetEmployeeGrade(empId))
                     .Select(x => x.AdditionalBenefits).FirstOrDefault().ToList();
         }
 
-        public int GetTotalBenefitsCount(int empId)
-        {
-            //Get the grade of employee
-            var grade = _empPersonalDetails.GetEmployeeGrade(empId);
-
-            var basicBenefits = _benefitEntity.BenefitCollection.Where(x => x.BenefitGrade == grade)
-                .Select(x => x.BasicBenefits).FirstOrDefault().ToList();
-
-            var additionalBenefits = _benefitEntity.BenefitCollection.Where(x => x.BenefitGrade == grade)
-                .Select(x => x.AdditionalBenefits).FirstOrDefault().ToList();
-
-            //Add both the Basic and Additional benefits and return the count
-            return basicBenefits.Count + additionalBenefits.Count;
-        }
+        public int GetTotalBenefitsCount(int empId) =>
+            _benefitEntity.BenefitCollection.Where(x => x.BenefitGrade == _empPersonalDetails.GetEmployeeGrade(empId)).Count<Benefits>();
     }
 }

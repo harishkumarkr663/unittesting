@@ -1,6 +1,6 @@
 ﻿namespace EmployeeApplication.Model
 {
-    internal class EmpFinanceDetails
+    internal class EmpFinanceDetails : IEmpFinanceDetails
     {
     }
 }

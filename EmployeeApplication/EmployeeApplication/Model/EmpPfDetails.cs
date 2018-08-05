@@ -2,15 +2,14 @@
 {
     public class EmpPfDetails : IEmpPfDetails
     {
+        private const int MinimumSalaryForPF = 4000;
         private IEmpPersonalDetails _empPersonalDetails;
 
         public EmpPfDetails(IEmpPersonalDetails empPersonalDetails) => _empPersonalDetails = empPersonalDetails;
 
-        public bool IsPfEligible(int empId)
-        {
+        public bool IsPfEligible(int empId) =>
             // If salary is greater than 4000 only then employee is eligible
-            return _empPersonalDetails.GetEmployeeSalary(empId) >= 4000;
-        }
+            _empPersonalDetails.GetEmployeeSalary(empId) >= MinimumSalaryForPF;
 
         public float GetPfEmployerControlSofar(int empId)
         {
