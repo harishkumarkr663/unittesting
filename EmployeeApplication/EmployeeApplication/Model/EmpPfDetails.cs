@@ -7,8 +7,8 @@
 
         public EmpPfDetails(IEmpPersonalDetails empPersonalDetails) => _empPersonalDetails = empPersonalDetails;
 
+        // If salary is greater than 4000 only then employee is eligible
         public bool IsPfEligible(int empId) =>
-            // If salary is greater than 4000 only then employee is eligible
             _empPersonalDetails.GetEmployeeSalary(empId) >= MinimumSalaryForPF;
 
         public float GetPfEmployerControlSofar(int empId)

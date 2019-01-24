@@ -54,11 +54,7 @@ namespace PFService
             {
                 salary = employeeEntity.Employees.Where(x => x.EmpId == empId).Select(x => x.Salary).FirstOrDefault();
             }
-
-            if (salary >= 4000)
-                return true;
-            else
-                return false;
+            return salary >= 4000;
         }
     }
 }

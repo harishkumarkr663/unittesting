@@ -10,8 +10,10 @@ namespace Testing
     public class UnitTest1
     {
         [Test]
-        public void Video1()
+        public void Test1()
         {
+            #region Commented
+
             //Video 1
             //Simple Moq
             //Arrange
@@ -24,6 +26,9 @@ namespace Testing
             //Assert.That(contrib, Is.EqualTo(3455), "Its not expected");
 
             //Arrange
+
+            #endregion Commented
+
             var moqpfDetail = new Mock<IEmpPersonalDetails>();
 
             var pfDetails = new EmpPfDetails(moqpfDetail.Object);
@@ -36,7 +41,7 @@ namespace Testing
         }
 
         [Test]
-        public void Video2()
+        public void Test2()
         {
             var moqPersonalDetail = new Mock<IEmpPersonalDetails>();
             moqPersonalDetail.Setup(x => x.GetDurationWorked(It.IsAny<int>()))
@@ -50,8 +55,10 @@ namespace Testing
         }
 
         [Test]
-        public void Video3()
+        public void Test3()
         {
+            #region Commented
+
             //Arrange
             //var moqpfDetail = new Mock<IEmpPersonalDetails>();
 
@@ -67,6 +74,9 @@ namespace Testing
             //    Times.Exactly(1));
 
             //Number of times being called
+
+            #endregion Commented
+
             List<Employee> employees = new List<Employee>
             {
                 new Employee

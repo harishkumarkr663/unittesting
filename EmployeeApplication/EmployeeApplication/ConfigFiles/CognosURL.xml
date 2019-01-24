@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <!--<SYSTare>
+    <Report Name="CognnosHPCReport"  Value="https://t-cognos.com/HPCReport" />
+    <Report Name="CognnosLCReport"  Value="https://d-cognos.com/LCReport" />
+    <Report Name="CognnosEligiblityRosterReport"  Value="https://d-cognos.com/EligibilityRosterReport" />
+    <Report Name="CognnosTransferSummaryReport"  Value="https://d-cognos.com/TransferSummary" />
+    <Report Name="CognnosHRAEmployeeAccountReport"  Value="https://d-cognos.com/HRAAccountDetail" />
+    <Report Name="CognnosYearToDateReport"  Value="https://d-cognos.com/YearToDate" />
+    <Report Name="CognnosAnnualStatementReport"  Value="https://d-cognos.com/ANNUALstATEMENT" />
+  </SYSTare>-->
+  <SYSTare>
+    <CognnosHPCReport>https://t-cognos.com/HPCReport </CognnosHPCReport>
+    <CognnosLCReport>https://d-cognos.com/LCReport </CognnosLCReport>
+    <CognnosEligiblityRosterReport>https://d-cognos.com/EligibilityRosterReport </CognnosEligiblityRosterReport>
+    <CognnosTransferSummaryReport>https://d-cognos.com/TransferSummary </CognnosTransferSummaryReport>
+    <CognnosHRAEmployeeAccountReport>https://d-cognos.com/HRAAccountDetail </CognnosHRAEmployeeAccountReport>
+    <CognnosYearToDateReport>https://d-cognos.com/YearToDate </CognnosYearToDateReport>
+    <CognnosAnnualStatementReport>https://d-cognos.com/ANNUALstATEMENT </CognnosAnnualStatementReport>
+  </SYSTare>
+  <SYSUncle>
+    <Report Name="CognnosHPCReport"  Value="https://d-cognos.com/HPCReport" />
+    <Report Name="CognnosLCReport"  Value="https://d-cognos.com/LCReport" />
+    <Report Name="CognnosEligiblityRosterReport"  Value="https://d-cognos.com/EligibilityRosterReport" />
+    <Report Name="CognnosTransferSummaryReport"  Value="https://d-cognos.com/TransferSummary" />
+    <Report Name="CognnosHRAEmployeeAccountReport"  Value="https://d-cognos.com/HRAAccountDetail" />
+    <Report Name="CognnosYearToDateReport"  Value="https://d-cognos.com/YearToDate" />
+    <Report Name="CognnosAnnualStatementReport"  Value="https://d-cognos.com/ANNUALstATEMENT" />
+  </SYSUncle>
+  <INTUncle>
+    <Report Name="CognnosHPCReport"  Value="https://d-cognos.com/HPCReport" />
+    <Report Name="CognnosLCReport"  Value="https://d-cognos.com/LCReport" />
+    <Report Name="CognnosEligiblityRosterReport"  Value="https://d-cognos.com/EligibilityRosterReport" />
+    <Report Name="CognnosTransferSummaryReport"  Value="https://d-cognos.com/TransferSummary" />
+    <Report Name="CognnosHRAEmployeeAccountReport"  Value="https://d-cognos.com/HRAAccountDetail" />
+    <Report Name="CognnosYearToDateReport"  Value="https://d-cognos.com/YearToDate" />
+    <Report Name="CognnosAnnualStatementReport"  Value="https://d-cognos.com/ANNUALstATEMENT" />
+  </INTUncle>
+  <RM>
+    <Report Name="CognnosHPCReport"  Value="https://d-cognos.com/HPCReport" />
+    <Report Name="CognnosLCReport"  Value="https://d-cognos.com/LCReport" />
+    <Report Name="CognnosEligiblityRosterReport"  Value="https://d-cognos.com/EligibilityRosterReport" />
+    <Report Name="CognnosTransferSummaryReport"  Value="https://d-cognos.com/TransferSummary" />
+    <Report Name="CognnosHRAEmployeeAccountReport"  Value="https://d-cognos.com/HRAAccountDetail" />
+    <Report Name="CognnosYearToDateReport"  Value="https://d-cognos.com/YearToDate" />
+    <Report Name="CognnosAnnualStatementReport"  Value="https://d-cognos.com/ANNUALstATEMENT" />
+  </RM>
+  <PVS>
+    <Report Name="CognnosHPCReport"  Value="https://d-cognos.com/HPCReport" />
+    <Report Name="CognnosLCReport"  Value="https://d-cognos.com/LCReport" />
+    <Report Name="CognnosEligiblityRosterReport"  Value="https://d-cognos.com/EligibilityRosterReport" />
+    <Report Name="CognnosTransferSummaryReport"  Value="https://d-cognos.com/TransferSummary" />
+    <Report Name="CognnosHRAEmployeeAccountReport"  Value="https://d-cognos.com/HRAAccountDetail" />
+    <Report Name="CognnosYearToDateReport"  Value="https://d-cognos.com/YearToDate" />
+    <Report Name="CognnosAnnualStatementReport"  Value="https://d-cognos.com/ANNUALstATEMENT" />
+  </PVS>
+</Root>

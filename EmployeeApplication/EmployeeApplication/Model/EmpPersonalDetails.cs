@@ -46,6 +46,10 @@ namespace EmployeeApplication.Model
                                                            where e.EmpId == empId
                                                            select e).FirstOrDefault();
 
+        public IEmployee GetEmployeeDetailsByNAme(string name) => (from e in _employeeEntity.EmployeesCollection.Where(x => x.Grade > 1)
+                                                                   where e.Name == name
+                                                                   select e).FirstOrDefault();
+
         public int GetDurationWorked(int empId)
         {
             var duration = (from e in _employeeEntity.EmployeesCollection
